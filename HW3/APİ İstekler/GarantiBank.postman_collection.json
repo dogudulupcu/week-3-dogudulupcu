@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "e3dba0e1-d4d4-47bc-af4f-2233a48c5260",
+		"name": "GarantiBank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17046345"
+	},
+	"item": [
+		{
+			"name": "create application",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/garantibank/v1/applications",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"garantibank",
+						"v1",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gettall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/garantibank/v1/applications",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"garantibank",
+						"v1",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

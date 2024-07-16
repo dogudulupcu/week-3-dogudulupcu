@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "f8ba31c1-7d27-4715-8268-a787b30ad090",
+		"name": "InvoiceService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17046345"
+	},
+	"item": [
+		{
+			"name": "getAllinvoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/api/v1/invoices",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

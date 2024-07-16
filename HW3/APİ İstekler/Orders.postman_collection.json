@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "d5c4573a-fb0d-4790-9c8d-41f3180acb36",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17046345"
+	},
+	"item": [
+		{
+			"name": "getAllOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/api/v1/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createInvoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order\": {\r\n        \"orderId\": 1,\r\n        \"customerId\": 2,\r\n        \"product\": {\r\n            \"productId\": 2,\r\n            \"productName\": \"bilgisayar\",\r\n            \"productPrice\": 9999.9,\r\n            \"productStock\": 10\r\n        },\r\n        \"createDate\": \"2024-03-31\",\r\n        \"orderStatus\": \"INITIAL\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/api/v1/orders/createInvoice",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"createInvoice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
